@@ -8,7 +8,7 @@ Rails.application.routes.draw do
  
 #Use /admin as a URL prefix, and let Rails know that all of the included routes will be handled by controllers in the admin module.
 
-  namespace: :admin do
+  namespace :admin do
     resources :stats, only: [:index]
   end
    
